@@ -7,34 +7,146 @@
         body {
             font-family: Tahoma;
             direction: rtl;
-            background: #f7f7f7;
+            background: #cce7ff; /* آبی روشن */
             text-align: center;
             padding: 30px;
         }
 
         h1 {
             color: #333;
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .menu-container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
         }
 
         .item {
             background: #fff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 25px;
+            border-radius: 18px; /* گردتر شده */
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15); /* سایه قوی‌تر */
+            transition: transform 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
         }
 
         .item img {
             width: 100%;
-            height: 160px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .item h3 {
+            margin: 15px 0 8px;
+            color: #111;
+        }
+
+        .price {
+            color: #008000;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        a.back {
+            display: inline-block;
+            margin-top: 35px;
+            background: #444;
+            padding: 14px 30px;
+            font-size: 16px;
+            color: white;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        a.back:hover {
+            background: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>منوی رستوران A.SH</h1>
+
+    <div class="menu-container">
+
+        <!-- غذاها -->
+        <div class="item">
+            <img src="https://i.imgur.com/spluS3A.jpeg" alt="کباب">
+            <h3>کباب مخصوص</h3>
+            <div class="price">۲۳۰,۰۰۰ تومان</div>
+            <p>کباب زعفرانی همراه با گوجه و دورچین</p>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/xkz1a0b.jpeg" alt="پیتزا">
+            <h3>پیتزا مخصوص</h3>
+            <div class="price">۱۸۰,۰۰۰ تومان</div>
+            <p>پیتزا با گوشت، قارچ، پنیر اضافه</p>
+        </div>
+
+        <!-- نوشیدنی‌ها -->
+        <div class="item">
+            <img src="https://i.imgur.com/4rjwZCQ.jpeg" alt="پپسی">
+            <h3>پپسی کولا</h3>
+            <div class="price">۲۰,۰۰۰ تومان</div>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/USiY5Gq.jpeg" alt="دوغ اب علی">
+            <h3>دوغ آب‌علی</h3>
+            <div class="price">۲۵,۰۰۰ تومان</div>
+        </div>
+
+        <!-- غذاهای جدید -->
+        <div class="item">
+            <img src="https://i.imgur.com/1ZQZ1Zx.jpeg" alt="چلو کباب کوبیده">
+            <h3>چلو کباب کوبیده</h3>
+            <div class="price">۲۰۰,۰۰۰ تومان</div>
+            <p>دو سیخ کباب کوبیده با برنج زعفرانی</p>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/4v7j9Xb.jpeg" alt="سبزی پلو با ماهی">
+            <h3>سبزی پلو با ماهی</h3>
+            <div class="price">۲۱۰,۰۰۰ تومان</div>
+            <p>سبزی پلو با ماهی سرخ‌شده تازه</p>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/k5vJ7cB.jpeg" alt="خوراک جوجه">
+            <h3>خوراک جوجه</h3>
+            <div class="price">۱۷۵,۰۰۰ تومان</div>
+            <p>جوجه کباب زعفرانی با گوجه و پیاز</p>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/T1BvIuV.jpeg" alt="سالاد فصل">
+            <h3>سالاد فصل</h3>
+            <div class="price">۴۵,۰۰۰ تومان</div>
+            <p>سالاد تازه با سبزیجات فصلی</p>
+        </div>
+
+        <div class="item">
+            <img src="https://i.imgur.com/dhQZ2gD.jpeg" alt="پاستا آلفردو">
+            <h3>پاستا آلفردو</h3>
+            <div class="price">۱۶۰,۰۰۰ تومان</div>
+            <p>پاستا با سس آلفردو و مرغ گریل‌شده</p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back">بازگشت به صفحه اصلی</a>
+
+</body>
+</html>            height: 160px;
             object-fit: cover;
             border-radius: 10px;
         }
