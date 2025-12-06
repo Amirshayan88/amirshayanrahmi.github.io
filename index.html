@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Website</title>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
 
-<style>
-    body {
-        background-color: turquoise;
-        font-family: Arial, sans-serif;
-        text-align: center;
-        color: black;
-        margin-top: 80px;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #333;
+            color: white;
+            font-family: Georgia, serif;
+            text-align: center;
+        }
 
-    h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-    }
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
 
-    h2 {
-        font-size: 32px;
-        margin-bottom: 40px;
-    }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
 
-    p {
-        font-size: 24px;
-    }
+        .subtitle {
+            font-style: italic;
+            color: #ccc;
+            max-width: 450px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
 
-    #orderBtn {
-        padding: 14px 30px;
-        font-size: 22px;
-        border-radius: 10px;
-        border: none;
-        color: white;
-        cursor: pointer;
-        background-color: green;
-        transition: background-color 0.5s;
-    }
-</style>
+        .phone {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: orange;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: darkorange;
+        }
+
+        .site {
+            margin-top: 40px;
+            color: #aaa;
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
-
 
 <body>
 
-<h1>Welcome to my website</h1>
-<h2>Amirshayan Rahmi = 11CA</h2>
+<div class="hero">
 
-<p>This is my first website 🚀</p>
+    <h1>WELCOME TO MY WEBSITE</h1>
 
-<button id="orderBtn">Order Now</button>
+    <div class="subtitle">
+        Order delicious food online,<br>
+        100% quality, safety and taste assured.
+    </div>
 
+    <div class="phone">
+        CALL 99999999 <br> FOR RESERVATIONS
+    </div>
 
-<script>
-    const colors = ["green", "blue", "red"];
-    let i = 0;
+    <a class="btn" href="#">ORDER NOW</a>
 
-    setInterval(() => {
-        document.getElementById("orderBtn").style.backgroundColor = colors[i];
-        i = (i + 1) % colors.length;
-    }, 1000);
-</script>
+    <div class="site">
+        www.yoursite.com
+    </div>
+
+</div>
 
 </body>
 </html>
