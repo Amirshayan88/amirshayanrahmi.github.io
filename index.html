@@ -4,71 +4,72 @@
 <meta charset="UTF-8">
 <title>Welcome</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
 <style>
 
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg,#00c6ff,#0072ff);
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+body{
+    margin:0;
+    padding:0;
+    background: turquoise;   /* پس زمینه آبی فیروزه ای */
+    color:white;
+    font-family: Georgia, serif;
+    text-align:center;
 }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
-h1 {
-    font-size: 52px;
-    margin-bottom: 15px;
+/* متن بالا */
+.top-title{
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:10px;
 }
 
-h1:first-child{
-    color: gold;
+/* عنوان اصلی */
+h1{
+    font-size:48px;  /* فونت بزرگتر */
+    margin-bottom:15px;
 }
 
-.subtitle {
-    font-style: italic;
-    color: #fff;
-    max-width: 450px;
-    line-height: 1.6;
-    margin-bottom: 35px;
-    font-size: 22px;
+.subtitle{
+    font-size:22px;     /* فونت بزرگتر */
+    max-width:450px;
+    line-height:1.8;
+    margin-bottom:30px;
 }
 
-.phone {
-    font-size: 30px;
-    margin-bottom: 20px;
+.phone{
+    font-size:28px;   /* فونت بزرگتر */
+    margin-bottom:25px;
 }
 
-@keyframes colorChange {
-    0%   { background: green; }
-    33%  { background: blue; }
-    66%  { background: red; }
-    100% { background: green; }
-}
-
-.btn {
-    color: #fff;
-    text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 5px;
-    font-size: 18px;
+/* دکمه رنگی متحرک */
+.btn{
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:8px;
+    font-size:20px;
     animation: colorChange 1s infinite;
 }
 
-.site {
-    margin-top: 40px;
-    color: #ddd;
-    letter-spacing: 2px;
+/* انیمیشن تغییر رنگ */
+@keyframes colorChange {
+    0%   {background: green;}
+    33%  {background: blue;}
+    66%  {background: red;}
+    100% {background: green;}
+}
+
+.site{
+    margin-top:35px;
+    color:#333;
+    font-size:18px;
 }
 
 </style>
@@ -78,28 +79,30 @@ h1:first-child{
 
 <div class="hero">
 
-<h1> Amirshayan Rahmi 11CA </h1>
-<h1>Welcome to A.SH restaurant</h1>
+    <div class="top-title">
+        Amirshayan Rahmi = 11CA
+    </div>
 
-<div class="subtitle">
-Order delicious food online,<br>
-100% quality, safety and taste assured.
-</div>
+    <h1>Welcome to A.SH restaurant</h1>
 
-<div class="phone">
-CALL 09121234567 <br> FOR RESERVATIONS
-</div>
+    <div class="subtitle">
+        Order delicious food online,<br>
+        100% quality, safety and taste assured.
+    </div>
 
-<a class="btn" href="#">ORDER NOW</a>
+    <div class="phone">
+        CALL 09121234567 <br> FOR RESERVATIONS
+    </div>
 
-<div class="site">
-www.yoursite.com
-</div>
+    <a class="btn" href="#">
+        ORDER NOW
+    </a>
+
+    <div class="site">
+        www.yoursite.com
+    </div>
 
 </div>
 
 </body>
-</html>    <a href="index.html" class="back">بازگشت به صفحه اصلی</a>
-
-</body>
-            </html>
+</html>
