@@ -1,73 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Welcome</title>
+<meta charset="UTF-8">
+<title>Welcome</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #333;
-            color: white;
-            font-family: Georgia, serif;
-            text-align: center;
-        }
+<style>
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+body{
+    margin:0;
+    padding:0;
+    background: turquoise;
+    color:white;
+    font-family: Georgia, serif;
+    text-align:center;
+}
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
 
-        .subtitle {
-            font-style: italic;
-            color: #ccc;
-            max-width: 450px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-            font-size: 18px;
-        }
+.top-title{
+    font-size:36px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
 
-        .phone {
-            font-size: 26px;
-            margin-bottom: 20px;
-        }
+    h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
 
-        .btn {
-            background: orange;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
+.subtitle{
+    font-size:22px;
+    max-width:450px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
 
-        .btn:hover {
-            background: darkorange;
-        }
+.phone{
+    font-size:28px;
+    margin-bottom:25px;
+}
 
-        .site {
-            margin-top: 40px;
-            color: #aaa;
-            letter-spacing: 2px;
-        }
-    </style>
+.btn{
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:8px;
+    font-size:20px;
+    animation: colorChange 1s infinite;
+}
+
+@keyframes colorChange {
+    0%   {background: green;}
+    33%  {background: blue;}
+    66%  {background: red;}
+    100% {background: green;}
+}
+
+.site{
+    margin-top:35px;
+    color:#333;
+    font-size:18px;
+}
+
+</style>
 </head>
 
 <body>
 
 <div class="hero">
-    <h1> Amirshayan Rahmi 11CA </h1>
+
+    <div class="top-title">
+        Amirshayan Rahmi = 11CA
+    </div>
 
     <h1>Welcome to A.SH restaurant</h1>
 
@@ -80,7 +90,9 @@
         CALL 09121234567 <br> FOR RESERVATIONS
     </div>
 
-    <a class="btn" href="#">ORDER NOW</a>
+    <a class="btn" href="#">
+        ORDER NOW
+    </a>
 
     <div class="site">
         www.yoursite.com
