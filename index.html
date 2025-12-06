@@ -1,32 +1,91 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>طراحی وب - یازدهم</title>
+    <title>A.SH Restauran</title>
+
     <style>
         body {
-            font-family: sans-serif;
-            background: #aee6ff;
-            padding: 40px;
+            margin: 0;
+            padding: 0;
+            background: #333;
+            color: white;
+            font-family: Georgia, serif;
             text-align: center;
         }
-        .box {
-            background: white;
-            padding: 30px;
-            margin: auto;
-            max-width: 500px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
         }
-        h1 { margin-bottom: 10px; }
-        p { color: #444; }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-style: italic;
+            color: #ccc;
+            max-width: 450px;
+            line-height: 1.6;
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+
+        .phone {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background: orange;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: darkorange;
+        }
+
+        .site {
+            margin-top: 40px;
+            color: #aaa;
+            letter-spacing: 2px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="box">
-        <h1>امیرشایان رحمی یازدهم کامپیوتر </h1>
-        <p>دبیران : اقای کاشانی و اقای هادیان </p>
+
+<div class="hero">
+
+    <h1>Welcome to Amirshayan Rahmi 11CA website</h1>
+
+    <div class="subtitle">
+        Order delicious food online,<br>
+        100% quality, safety and taste assured.
     </div>
+
+    <div class="phone">
+        CALL 09120001234 <br> FOR RESERVATIONS
+    </div>
+
+    <a class="btn" href="#">ORDER NOW</a>
+
+    <div class="site">
+        www.Amirshayanrahmi.ir
+    </div>
+
+</div>
+
 </body>
 </html>
