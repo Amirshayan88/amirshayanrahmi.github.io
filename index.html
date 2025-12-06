@@ -1,91 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>A.SH Restauran</title>
+<meta charset="UTF-8">
+<title>My Website</title>
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #333;
-            color: white;
-            font-family: Georgia, serif;
-            text-align: center;
-        }
+<style>
+    body {
+        background-color: turquoise;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: black;
+        margin-top: 80px;
+    }
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
+    h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+    }
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+    h2 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
 
-        .subtitle {
-            font-style: italic;
-            color: #ccc;
-            max-width: 450px;
-            line-height: 1.6;
-            margin-bottom: 35px;
-            font-size: 18px;
-        }
+    p {
+        font-size: 24px;
+    }
 
-        .phone {
-            font-size: 26px;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            background: orange;
-            color: #fff;
-            text-decoration: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: darkorange;
-        }
-
-        .site {
-            margin-top: 40px;
-            color: #aaa;
-            letter-spacing: 2px;
-        }
-    </style>
+    #orderBtn {
+        padding: 14px 30px;
+        font-size: 22px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background-color: green;
+        transition: background-color 0.5s;
+    }
+</style>
 </head>
+
 
 <body>
 
-<div class="hero">
+<h1>Welcome to my website</h1>
+<h2>Amirshayan Rahmi = 11CA</h2>
 
-    <h1>Welcome to Amirshayan Rahmi 11CA website</h1>
+<p>This is my first website 🚀</p>
 
-    <div class="subtitle">
-        Order delicious food online,<br>
-        100% quality, safety and taste assured.
-    </div>
+<button id="orderBtn">Order Now</button>
 
-    <div class="phone">
-        CALL 09120001234 <br> FOR RESERVATIONS
-    </div>
 
-    <a class="btn" href="#">ORDER NOW</a>
+<script>
+    const colors = ["green", "blue", "red"];
+    let i = 0;
 
-    <div class="site">
-        www.Amirshayanrahmi.ir
-    </div>
-
-</div>
+    setInterval(() => {
+        document.getElementById("orderBtn").style.backgroundColor = colors[i];
+        i = (i + 1) % colors.length;
+    }, 1000);
+</script>
 
 </body>
 </html>
