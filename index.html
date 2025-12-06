@@ -1,162 +1,105 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>منوی رستوران A.SH</title>
-    <style>
-        body {
-            font-family: Tahoma;
-            direction: rtl;
-            background: #cce7ff; /* آبی روشن */
-            text-align: center;
-            padding: 30px;
-        }
+<meta charset="UTF-8">
+<title>Welcome</title>
 
-        h1 {
-            color: #333;
-            margin-bottom: 30px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-        .menu-container {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 25px;
-        }
+<style>
 
-        .item {
-            background: #fff;
-            padding: 25px;
-            border-radius: 18px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-            transition: transform 0.3s;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg,#00c6ff,#0072ff);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
 
-        .item:hover {
-            transform: translateY(-5px);
-        }
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
 
-        .item h3 {
-            margin: 15px 0 8px;
-            color: #111;
-        }
+h1 {
+    font-size: 52px;
+    margin-bottom: 15px;
+}
 
-        .price {
-            color: #008000;
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
+h1:first-child{
+    color: gold;
+}
 
-        a.back {
-            display: inline-block;
-            margin-top: 35px;
-            background: #444;
-            padding: 14px 30px;
-            font-size: 16px;
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-        }
+.subtitle {
+    font-style: italic;
+    color: #fff;
+    max-width: 450px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    font-size: 22px;
+}
 
-        a.back:hover {
-            background: #222;
-        }
-    </style>
+.phone {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+@keyframes colorChange {
+    0%   { background: green; }
+    33%  { background: blue; }
+    66%  { background: red; }
+    100% { background: green; }
+}
+
+.btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    animation: colorChange 1s infinite;
+}
+
+.site {
+    margin-top: 40px;
+    color: #ddd;
+    letter-spacing: 2px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <h1>منوی رستوران A.SH</h1>
+<div class="hero">
 
-    <div class="menu-container">
+<h1> Amirshayan Rahmi 11CA </h1>
+<h1>Welcome to A.SH restaurant</h1>
 
-        <!-- غذاهای قبلی -->
-        <div class="item">
-            <h3>کباب مخصوص</h3>
-            <div class="price">۲۳۰,۰۰۰ تومان</div>
-            <p>کباب زعفرانی همراه با گوجه و دورچین</p>
-        </div>
+<div class="subtitle">
+Order delicious food online,<br>
+100% quality, safety and taste assured.
+</div>
 
-        <div class="item">
-            <h3>پیتزا مخصوص</h3>
-            <div class="price">۱۸۰,۰۰۰ تومان</div>
-            <p>پیتزا با گوشت، قارچ، پنیر اضافه</p>
-        </div>
+<div class="phone">
+CALL 09121234567 <br> FOR RESERVATIONS
+</div>
 
-        <div class="item">
-            <h3>پپسی کولا</h3>
-            <div class="price">۲۰,۰۰۰ تومان</div>
-        </div>
+<a class="btn" href="#">ORDER NOW</a>
 
-        <div class="item">
-            <h3>دوغ آب‌علی</h3>
-            <div class="price">۲۵,۰۰۰ تومان</div>
-        </div>
+<div class="site">
+www.yoursite.com
+</div>
 
-        <div class="item">
-            <h3>چلو کباب کوبیده</h3>
-            <div class="price">۲۰۰,۰۰۰ تومان</div>
-            <p>دو سیخ کباب کوبیده با برنج زعفرانی</p>
-        </div>
+</div>
 
-        <div class="item">
-            <h3>سبزی پلو با ماهی</h3>
-            <div class="price">۲۱۰,۰۰۰ تومان</div>
-            <p>سبزی پلو با ماهی سرخ‌شده تازه</p>
-        </div>
-
-        <div class="item">
-            <h3>خوراک جوجه</h3>
-            <div class="price">۱۷۵,۰۰۰ تومان</div>
-            <p>جوجه کباب زعفرانی با گوجه و پیاز</p>
-        </div>
-
-        <div class="item">
-            <h3>سالاد فصل</h3>
-            <div class="price">۴۵,۰۰۰ تومان</div>
-            <p>سالاد تازه با سبزیجات فصلی</p>
-        </div>
-
-        <div class="item">
-            <h3>پاستا آلفردو</h3>
-            <div class="price">۱۶۰,۰۰۰ تومان</div>
-            <p>پاستا با سس آلفردو و مرغ گریل‌شده</p>
-        </div>
-
-        <div class="item">
-            <h3>خوراک کباب برگ</h3>
-            <div class="price">۲۵۰,۰۰۰ تومان</div>
-            <p>کباب برگ ممتاز با برنج و سبزیجات تازه</p>
-        </div>
-
-        <!-- چهار غذای جدید اضافه شده -->
-        <div class="item">
-            <h3>خوراک فسنجان</h3>
-            <div class="price">۲۳۰,۰۰۰ تومان</div>
-            <p>مرغ یا گردن گوسفند با سس انار و گردو</p>
-        </div>
-
-        <div class="item">
-            <h3>کباب لقمه‌ای</h3>
-            <div class="price">۲۱۰,۰۰۰ تومان</div>
-            <p>لقمه‌های کبابی با برنج و سبزیجات تازه</p>
-        </div>
-
-        <div class="item">
-            <h3>خوراک سبزیجات گریل</h3>
-            <div class="price">۹۵,۰۰۰ تومان</div>
-            <p>انواع سبزیجات تازه و گریل شده با سس مخصوص</p>
-        </div>
-
-        <div class="item">
-            <h3>پلو مرغ و زعفران</h3>
-            <div class="price">۱۸۵,۰۰۰ تومان</div>
-            <p>برنج زعفرانی با مرغ گریل‌شده و چاشنی مخصوص</p>
-        </div>
-
-    </div>
-
-    <a href="index.html" class="back">بازگشت به صفحه اصلی</a>
+</body>
+</html>    <a href="index.html" class="back">بازگشت به صفحه اصلی</a>
 
 </body>
             </html>
