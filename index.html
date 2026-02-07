@@ -5,34 +5,46 @@
 <title>منو کافه</title>
 
 <style>
-/* ==== CSS اینجاست ==== */
-
 body{
     background:#111;
     font-family: Tahoma;
     direction: rtl;
     margin:0;
+    color:white;
 }
 
 .container{
-    width:90%;
+    width:95%;
     margin:auto;
 }
 
+/* منوی بالا */
 .top-menu{
     display:flex;
     gap:10px;
     margin:20px 0;
+    overflow-x:auto;
 }
 
 .menu-btn{
     background:#222;
-    color:white;
     padding:10px 20px;
     border-radius:8px;
+    white-space:nowrap;
 }
 
-.menu-list table{
+/* هر بخش */
+.section{
+    margin-bottom:40px;
+}
+
+.section h2{
+    margin:20px 0;
+    color:orange;
+}
+
+/* جدول آیتم‌ها */
+table{
     width:100%;
     border-spacing:15px;
 }
@@ -44,6 +56,7 @@ body{
 
 .item td{
     padding:15px;
+    vertical-align:middle;
 }
 
 .img img{
@@ -52,60 +65,162 @@ body{
 }
 
 .info h3{
-    color:white;
     margin:0;
 }
 
 .info p{
     color:gray;
+    margin:5px 0;
 }
 
 .price{
-    color:orange;
+    color:#ffb300;
 }
 
+/* دکمه خرید */
 .buy-btn{
     background:#00c853;
     color:white;
-    padding:10px 20px;
-    text-decoration:none;
+    padding:10px 22px;
     border-radius:8px;
+    text-decoration:none;
 }
 </style>
-
 </head>
+
 <body>
 
 <div class="container">
 
-    <div class="top-menu">
-        <div class="menu-btn">نوشیدنی گرم</div>
-        <div class="menu-btn">نوشیدنی سرد</div>
-        <div class="menu-btn">پیش غذا</div>
-        <div class="menu-btn">دسر</div>
-    </div>
+<!-- منوی بالا -->
+<div class="top-menu">
+    <div class="menu-btn">نوشیدنی گرم</div>
+    <div class="menu-btn">نوشیدنی سرد</div>
+    <div class="menu-btn">پیش غذا</div>
+    <div class="menu-btn">دسر</div>
+</div>
 
-    <div class="menu-list">
-        <table>
+<!-- نوشیدنی گرم -->
+<div class="section">
+<h2>نوشیدنی گرم</h2>
+<table>
 
-            <tr class="item">
-                <td class="img">
-                    <img src="images/espresso.jpg">
-                </td>
+<tr class="item">
+<td class="img"><img src="images/espresso.jpg"></td>
+<td class="info">
+<h3>اسپرسو</h3>
+<p>قهوه خالص ایتالیایی</p>
+<span class="price">80,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
 
-                <td class="info">
-                    <h3>قهوه اسپرسو</h3>
-                    <p>قهوه خالص ایتالیایی</p>
-                    <span class="price">80,000 تومان</span>
-                </td>
+<tr class="item">
+<td class="img"><img src="images/latte.jpg"></td>
+<td class="info">
+<h3>لاته</h3>
+<p>قهوه با شیر بخار داده شده</p>
+<span class="price">110,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
 
-                <td>
-                    <a href="https://snappfood.ir" class="buy-btn">خرید</a>
-                </td>
-            </tr>
+<tr class="item">
+<td class="img"><img src="images/cappuccino.jpg"></td>
+<td class="info">
+<h3>کاپوچینو</h3>
+<p>قهوه با فوم شیر</p>
+<span class="price">120,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
 
-        </table>
-    </div>
+</table>
+</div>
+
+<!-- نوشیدنی سرد -->
+<div class="section">
+<h2>نوشیدنی سرد</h2>
+<table>
+
+<tr class="item">
+<td class="img"><img src="images/iced-latte.jpg"></td>
+<td class="info">
+<h3>آیس لاته</h3>
+<p>قهوه سرد با یخ</p>
+<span class="price">130,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+<tr class="item">
+<td class="img"><img src="images/mojito.jpg"></td>
+<td class="info">
+<h3>موهیتو</h3>
+<p>نعناع و لیمو تازه</p>
+<span class="price">95,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+</table>
+</div>
+
+<!-- پیش غذا -->
+<div class="section">
+<h2>پیش غذا</h2>
+<table>
+
+<tr class="item">
+<td class="img"><img src="images/fries.jpg"></td>
+<td class="info">
+<h3>سیب‌زمینی سرخ‌کرده</h3>
+<p>به همراه سس مخصوص</p>
+<span class="price">150,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+<tr class="item">
+<td class="img"><img src="images/nuggets.jpg"></td>
+<td class="info">
+<h3>ناگت مرغ</h3>
+<p>۶ تکه</p>
+<span class="price">180,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+</table>
+</div>
+
+<!-- دسر -->
+<div class="section">
+<h2>دسر</h2>
+<table>
+
+<tr class="item">
+<td class="img"><img src="images/cheesecake.jpg"></td>
+<td class="info">
+<h3>چیزکیک</h3>
+<p>با سس توت فرنگی</p>
+<span class="price">140,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+<tr class="item">
+<td class="img"><img src="images/brownie.jpg"></td>
+<td class="info">
+<h3>براونی شکلاتی</h3>
+<p>گرم و تازه</p>
+<span class="price">130,000 تومان</span>
+</td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+</table>
+</div>
 
 </div>
 
