@@ -5,91 +5,52 @@
 <title>منو کافه</title>
 
 <style>
-/* فونت زیبا و بزرگتر */
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Sahel:wght@600;700&display=swap');
 
 body{
     background:#111;
-    font-family: 'Vazirmatn', Tahoma, sans-serif;
-    direction: rtl;
+    font-family:'Vazirmatn', sans-serif;
+    direction:rtl;
     margin:0;
     color:white;
-    font-size: 18px; /* فونت بزرگتر */
+    font-size:18px;
 }
 
-.container{
-    width:95%;
-    margin:auto;
-}
+.container{width:95%;margin:auto;}
 
 .top-menu{
     display:flex;
-    gap:15px;
-    margin:25px 0;
-    overflow-x:auto;
+    gap:20px;
+    margin:30px 0;
 }
 
 .menu-btn{
     background:#222;
-    padding:15px 25px; /* بزرگتر */
-    border-radius:10px;
+    padding:18px 30px;
+    border-radius:12px;
     color:white;
     text-decoration:none;
-    white-space:nowrap;
-    font-size: 20px; /* بزرگتر و واضح */
+    font-size:22px;
     font-weight:700;
-    transition:0.3s;
 }
 
-.menu-btn:hover{
-    background:#555;
+.section{margin-bottom:60px;}
+.section h2{color:orange;font-size:26px;}
+
+table{width:100%;border-spacing:20px;}
+.item{background:#1c1c1c;border-radius:15px;}
+.item td{padding:15px;}
+
+.img img{width:120px;border-radius:12px;}
+
+.food-name{
+    font-family:'Sahel', sans-serif;
+    font-size:22px;
+    font-weight:700;
 }
 
-.section{
-    margin-bottom:50px;
-}
-
-.section h2{
-    color:orange;
-    font-size: 24px;
-    margin-bottom:15px;
-}
-
-table{
-    width:100%;
-    border-spacing:20px;
-}
-
-.item{
-    background:#1c1c1c;
-    border-radius:12px;
-}
-
-.item td{
-    padding:15px;
-}
-
-.img img{
-    width:120px;
-    border-radius:12px;
-}
-
-.info h3{
-    margin:0;
-    font-size: 20px;
-}
-
-.info p{
-    color:gray;
-    margin:5px 0;
-    font-size:16px;
-}
-
-.price{
-    color:#ffb300;
-    font-weight:bold;
-    font-size:18px;
-}
+.food-desc{color:#bbb;font-size:16px;}
+.price{color:#ffb300;font-weight:bold;}
 
 .buy-btn{
     background:#00c853;
@@ -97,13 +58,7 @@ table{
     padding:12px 25px;
     border-radius:10px;
     text-decoration:none;
-    font-size:16px;
     font-weight:bold;
-    transition:0.3s;
-}
-
-.buy-btn:hover{
-    background:#00e676;
 }
 </style>
 </head>
@@ -111,80 +66,86 @@ table{
 <body>
 <div class="container">
 
-<!-- منوی بالا -->
 <div class="top-menu">
     <a class="menu-btn" href="index.html">منو</a>
     <a class="menu-btn" href="page2.html">غذاهای اصلی</a>
 </div>
 
-<!-- نوشیدنی گرم -->
 <div class="section">
 <h2>نوشیدنی گرم</h2>
 <table>
 <tr class="item">
 <td class="img"><img src="images/espresso.jpg"></td>
-<td class="info"><h3>اسپرسو</h3><p>قهوه خالص</p><span class="price">80,000 تومان</span></td>
+<td>
+<h3 class="food-name">اسپرسو</h3>
+<p class="food-desc">قهوه خالص</p>
+<span class="price">80,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
+
 <tr class="item">
 <td class="img"><img src="images/latte.jpg"></td>
-<td class="info"><h3>لاته</h3><p>قهوه با شیر</p><span class="price">110,000 تومان</span></td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-<tr class="item">
-<td class="img"><img src="images/cappuccino.jpg"></td>
-<td class="info"><h3>کاپوچینو</h3><p>با فوم شیر</p><span class="price">120,000 تومان</span></td>
+<td>
+<h3 class="food-name">لاته</h3>
+<p class="food-desc">قهوه با شیر</p>
+<span class="price">110,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 </table>
 </div>
 
-<!-- نوشیدنی سرد -->
 <div class="section">
 <h2>نوشیدنی سرد</h2>
 <table>
 <tr class="item">
 <td class="img"><img src="images/iced-latte.jpg"></td>
-<td class="info"><h3>آیس لاته</h3><p>قهوه سرد</p><span class="price">130,000 تومان</span></td>
+<td>
+<h3 class="food-name">آیس لاته</h3>
+<p class="food-desc">قهوه سرد</p>
+<span class="price">130,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
+
 <tr class="item">
 <td class="img"><img src="images/mojito.jpg"></td>
-<td class="info"><h3>موهیتو</h3><p>نعناع و لیمو</p><span class="price">95,000 تومان</span></td>
+<td>
+<h3 class="food-name">موهیتو</h3>
+<p class="food-desc">نعناع و لیمو</p>
+<span class="price">95,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 </table>
 </div>
 
-<!-- پیش غذا -->
 <div class="section">
 <h2>پیش غذا</h2>
 <table>
 <tr class="item">
 <td class="img"><img src="images/fries.jpg"></td>
-<td class="info"><h3>سیب زمینی</h3><p>با سس</p><span class="price">150,000 تومان</span></td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-<tr class="item">
-<td class="img"><img src="images/nuggets.jpg"></td>
-<td class="info"><h3>ناگت مرغ</h3><p>۶ تکه</p><span class="price">180,000 تومان</span></td>
+<td>
+<h3 class="food-name">سیب زمینی</h3>
+<p class="food-desc">با سس</p>
+<span class="price">150,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 </table>
 </div>
 
-<!-- دسر -->
 <div class="section">
 <h2>دسر</h2>
 <table>
 <tr class="item">
 <td class="img"><img src="images/cheesecake.jpg"></td>
-<td class="info"><h3>چیزکیک</h3><p>با سس توت‌فرنگی</p><span class="price">140,000 تومان</span></td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-<tr class="item">
-<td class="img"><img src="images/brownie.jpg"></td>
-<td class="info"><h3>براونی</h3><p>شکلاتی</p><span class="price">130,000 تومان</span></td>
+<td>
+<h3 class="food-name">چیزکیک</h3>
+<p class="food-desc">سس توت فرنگی</p>
+<span class="price">140,000 تومان</span>
+</td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 </table>
