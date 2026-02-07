@@ -5,112 +5,107 @@
 <title>غذاهای اصلی</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Sahel:wght@600;700&display=swap');
 
 body{
     background:#111;
-    font-family:'Vazirmatn', Tahoma, sans-serif;
+    font-family:'Vazirmatn', sans-serif;
     direction:rtl;
     margin:0;
     color:white;
     font-size:18px;
 }
 
-.container{
-    width:95%;
-    margin:auto;
-}
+.container{width:95%;margin:auto;}
 
 .top-menu{
     display:flex;
-    gap:15px;
-    margin:25px 0;
+    gap:20px;
+    margin:30px 0;
 }
 
 .menu-btn{
     background:#222;
-    padding:15px 25px;
-    border-radius:10px;
+    padding:18px 30px;
+    border-radius:12px;
     color:white;
     text-decoration:none;
-    font-size:20px;
+    font-size:22px;
     font-weight:700;
-    transition:0.3s;
 }
 
-.menu-btn:hover{
-    background:#555;
-}
-
-table{
-    width:100%;
-    border-spacing:20px;
-}
-
-.item{
-    background:#1c1c1c;
-    border-radius:12px;
-}
-
+table{width:100%;border-spacing:20px;}
+.item{background:#1c1c1c;border-radius:15px;}
 .item td{padding:15px;}
 
-.img img{
-    width:120px;
-    border-radius:12px;
+.img img{width:120px;border-radius:12px;}
+
+.food-name{
+    font-family:'Sahel', sans-serif;
+    font-size:22px;
+    font-weight:700;
 }
 
-.info h3{margin:0;font-size:20px;}
-.info p{color:gray;margin:5px 0;font-size:16px;}
-.price{color:#ffb300;font-weight:bold;font-size:18px;}
+.food-desc{color:#bbb;font-size:16px;}
+.price{color:#ffb300;font-weight:bold;}
+
 .buy-btn{
     background:#00c853;
     color:white;
     padding:12px 25px;
     border-radius:10px;
     text-decoration:none;
-    font-size:16px;
     font-weight:bold;
-    transition:0.3s;
 }
-.buy-btn:hover{background:#00e676;}
 </style>
 </head>
 
 <body>
 <div class="container">
 
-<!-- منوی بالا -->
 <div class="top-menu">
     <a class="menu-btn" href="index.html">منو</a>
     <a class="menu-btn" href="page2.html">غذاهای اصلی</a>
 </div>
 
-<h2 style="color:orange">غذاهای اصلی</h2>
-
 <table>
+
 <tr class="item">
 <td class="img"><img src="images/burger.jpg"></td>
-<td><h3>برگر مخصوص</h3><p>گوشت گریل شده</p><span class="price">250,000 تومان</span></td>
+<td><h3 class="food-name">برگر مخصوص</h3><p class="food-desc">گوشت گریل شده</p><span class="price">250,000 تومان</span></td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td class="img"><img src="images/pizza.jpg"></td>
-<td><h3>پیتزا پپرونی</h3><p>پنیر موزارلا</p><span class="price">320,000 تومان</span></td>
+<td class="img"><img src="images/double-burger.jpg"></td>
+<td><h3 class="food-name">برگر دوبل</h3><p class="food-desc">دو لایه گوشت</p><span class="price">320,000 تومان</span></td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td class="img"><img src="images/pasta.jpg"></td>
-<td><h3>پاستا آلفردو</h3><p>سس خامه و مرغ</p><span class="price">280,000 تومان</span></td>
+<td class="img"><img src="images/steak.jpg"></td>
+<td><h3 class="food-name">استیک</h3><p class="food-desc">سس قارچ</p><span class="price">450,000 تومان</span></td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td class="img"><img src="images/grilled-chicken.jpg"></td>
-<td><h3>مرغ گریل</h3><p>با سبزیجات</p><span class="price">300,000 تومان</span></td>
+<td class="img"><img src="images/fried-chicken.jpg"></td>
+<td><h3 class="food-name">فیله سوخاری</h3><p class="food-desc">کریسپی</p><span class="price">290,000 تومان</span></td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
+
+<tr class="item">
+<td class="img"><img src="images/lasagna.jpg"></td>
+<td><h3 class="food-name">لازانیا</h3><p class="food-desc">گوشت و پنیر</p><span class="price">300,000 تومان</span></td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
+<tr class="item">
+<td class="img"><img src="images/special-pizza.jpg"></td>
+<td><h3 class="food-name">پیتزا مخصوص</h3><p class="food-desc">پنیر فراوان</p><span class="price">350,000 تومان</span></td>
+<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+</tr>
+
 </table>
 
 </div>
