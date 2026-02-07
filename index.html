@@ -1,105 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>A.SH restaurant</title>
+<title>منو کافه</title>
 
 <style>
+/* ==== CSS اینجاست ==== */
 
 body{
+    background:#111;
+    font-family: Tahoma;
+    direction: rtl;
     margin:0;
-    padding:0;
-    background: lightblue;   /* پس زمینه آبی فیروزه ای */
-    color:white;
-    font-family: Georgia, serif;
-    text-align:center;
 }
 
-.hero{
-    min-height:100vh;
+.container{
+    width:90%;
+    margin:auto;
+}
+
+.top-menu{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+    gap:10px;
+    margin:20px 0;
 }
 
-/* متن بالا */
-.top-title{
-    font-size:36px;
-    font-weight:bold;
-    margin-bottom:10px;
-}
-
-/* عنوان اصلی */
-h1{
-    font-size:48px;  /* فونت بزرگتر */
-    margin-bottom:15px;
-}
-
-.subtitle{
-    font-size:22px;     /* فونت بزرگتر */
-    max-width:450px;
-    line-height:1.8;
-    margin-bottom:30px;
-}
-
-.phone{
-    font-size:28px;   /* فونت بزرگتر */
-    margin-bottom:25px;
-}
-
-/* دکمه رنگی متحرک */
-.btn{
+.menu-btn{
+    background:#222;
     color:white;
-    text-decoration:none;
-    padding:15px 40px;
+    padding:10px 20px;
     border-radius:8px;
-    font-size:20px;
-    animation: colorChange 1s infinite;
 }
 
-/* انیمیشن تغییر رنگ */
-@keyframes colorChange {
-    0%   {background: green;}
-    33%  {background: blue;}
-    66%  {background: red;}
-    100% {background: green;}
+.menu-list table{
+    width:100%;
+    border-spacing:15px;
 }
 
-.site{
-    margin-top:35px;
-    color:#333;
-    font-size:18px;
+.item{
+    background:#1c1c1c;
+    border-radius:10px;
 }
 
+.item td{
+    padding:15px;
+}
+
+.img img{
+    width:90px;
+    border-radius:10px;
+}
+
+.info h3{
+    color:white;
+    margin:0;
+}
+
+.info p{
+    color:gray;
+}
+
+.price{
+    color:orange;
+}
+
+.buy-btn{
+    background:#00c853;
+    color:white;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:8px;
+}
 </style>
-</head>
 
+</head>
 <body>
 
-<div class="hero">
+<div class="container">
 
-    <div class="top-title">
-        Amirshayan Rahmi = 11CA
+    <div class="top-menu">
+        <div class="menu-btn">نوشیدنی گرم</div>
+        <div class="menu-btn">نوشیدنی سرد</div>
+        <div class="menu-btn">پیش غذا</div>
+        <div class="menu-btn">دسر</div>
     </div>
 
-    <h1>Welcome to A.SH restaurant</h1>
+    <div class="menu-list">
+        <table>
 
-    <div class="subtitle">
-        Order delicious food online,<br>
-        100% quality, safety and taste assured.
-    </div>
+            <tr class="item">
+                <td class="img">
+                    <img src="images/espresso.jpg">
+                </td>
 
-    <div class="phone">
-        CALL 09121234567 <br> FOR RESERVATIONS
-    </div>
+                <td class="info">
+                    <h3>قهوه اسپرسو</h3>
+                    <p>قهوه خالص ایتالیایی</p>
+                    <span class="price">80,000 تومان</span>
+                </td>
 
-    <a class="btn" href="Page2.html">
-        ORDER NOW
-    </a>
+                <td>
+                    <a href="https://snappfood.ir" class="buy-btn">خرید</a>
+                </td>
+            </tr>
 
-    <div class="site">
-        www.amirshayanrahmi.ir
+        </table>
     </div>
 
 </div>
