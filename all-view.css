@@ -1,0 +1,145 @@
+/* فونت کل صفحه */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Sahel:wght@600;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center; /* وسط افقی */
+    align-items: center;     /* وسط عمودی */
+    min-height: 100vh;       /* ارتفاع کل صفحه */
+    background: #1e1e1e;
+    font-family: 'Vazirmatn', sans-serif;
+    direction: rtl;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+}
+
+.group {
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgb(0, 0, 0,0.3s);
+}
+.group h1 {
+    margin: 0;
+    font-size: 25px;
+}
+.group p {
+    margin: 5px 0 0 0 ;
+    font-size: 35px;
+
+
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* منو بالا */
+.top-menu {
+    display: flex;
+    justify-content: center; /* وسط منو */
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.menu-btn {
+    background: #ff7043;
+    padding: 14px 25px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menu-btn:hover {
+    background: #ff5722;
+}
+
+/* عنوان بخش */
+.section h2 {
+    color: #ffa726;
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'Sahel', sans-serif;
+    text-align: center;
+}
+
+/* جدول غذا */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 15px;
+    margin: 0 auto; /* وسط جدول */
+}
+
+.item {
+    background: #424242;
+    border-radius: 25px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+.item:hover {
+    transform: translateY(-5px);
+}
+
+/* td اصلاح شده برای کاهش فاصله داخلی */
+.item td {
+    padding: 8px;
+    vertical-align: middle;
+}
+
+/* عکس‌ها */
+.img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* نام غذا */
+.food-name {
+    font-family: 'Sahel', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* توضیحات */
+.food-desc {
+    color: #ccc;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+/* قیمت */
+.price {
+    color: #ffb300;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* دکمه خرید */
+.buy-btn {
+    background: #00c853;
+    color: white;
+    padding: 8px 15px;
+    margin-right: 140px;
+    margin-left: -100px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.2s;
+}
+.buy-btn:hover {
+    background: #00e676;
+}
