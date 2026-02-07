@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title>منو کافه</title>
+<title>غذاهای اصلی</title>
 
 <style>
 body{
@@ -18,32 +18,17 @@ body{
     margin:auto;
 }
 
-/* منوی بالا */
-.top-menu{
-    display:flex;
-    gap:10px;
+/* هدر */
+.header{
     margin:20px 0;
-    overflow-x:auto;
 }
 
-.menu-btn{
-    background:#222;
-    padding:10px 20px;
-    border-radius:8px;
-    white-space:nowrap;
-}
-
-/* هر بخش */
-.section{
-    margin-bottom:40px;
-}
-
-.section h2{
-    margin:20px 0;
+.back{
     color:orange;
+    text-decoration:none;
 }
 
-/* جدول آیتم‌ها */
+/* جدول */
 table{
     width:100%;
     border-spacing:15px;
@@ -56,32 +41,21 @@ table{
 
 .item td{
     padding:15px;
-    vertical-align:middle;
 }
 
 .img img{
-    width:90px;
+    width:100px;
     border-radius:10px;
-}
-
-.info h3{
-    margin:0;
-}
-
-.info p{
-    color:gray;
-    margin:5px 0;
 }
 
 .price{
     color:#ffb300;
 }
 
-/* دکمه خرید */
 .buy-btn{
     background:#00c853;
     color:white;
-    padding:10px 22px;
+    padding:10px 20px;
     border-radius:8px;
     text-decoration:none;
 }
@@ -92,135 +66,62 @@ table{
 
 <div class="container">
 
-<!-- منوی بالا -->
-<div class="top-menu">
-    <div class="menu-btn">نوشیدنی گرم</div>
-    <div class="menu-btn">نوشیدنی سرد</div>
-    <div class="menu-btn">پیش غذا</div>
-    <div class="menu-btn">دسر</div>
+<div class="header">
+    <a href="index.html" class="back">⬅ بازگشت به منو</a>
+    <h2>غذاهای اصلی</h2>
 </div>
 
-<!-- نوشیدنی گرم -->
-<div class="section">
-<h2>نوشیدنی گرم</h2>
 <table>
 
 <tr class="item">
-<td class="img"><img src="images/espresso.jpg"></td>
-<td class="info">
-<h3>اسپرسو</h3>
-<p>قهوه خالص ایتالیایی</p>
-<span class="price">80,000 تومان</span>
+<td class="img"><img src="images/burger.jpg"></td>
+<td>
+<h3>برگر مخصوص</h3>
+<p>گوشت گریل شده با پنیر</p>
+<span class="price">250,000 تومان</span>
 </td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
 </tr>
 
 <tr class="item">
-<td class="img"><img src="images/latte.jpg"></td>
-<td class="info">
-<h3>لاته</h3>
-<p>قهوه با شیر بخار داده شده</p>
-<span class="price">110,000 تومان</span>
+<td class="img"><img src="images/pizza.jpg"></td>
+<td>
+<h3>پیتزا پپرونی</h3>
+<p>پنیر موزارلا و پپرونی</p>
+<span class="price">320,000 تومان</span>
 </td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
 </tr>
 
 <tr class="item">
-<td class="img"><img src="images/cappuccino.jpg"></td>
-<td class="info">
-<h3>کاپوچینو</h3>
-<p>قهوه با فوم شیر</p>
-<span class="price">120,000 تومان</span>
+<td class="img"><img src="images/pasta.jpg"></td>
+<td>
+<h3>پاستا آلفردو</h3>
+<p>سس خامه و مرغ</p>
+<span class="price">280,000 تومان</span>
 </td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
+</tr>
+
+<tr class="item">
+<td class="img"><img src="images/steak.jpg"></td>
+<td>
+<h3>استیک گوشت</h3>
+<p>گوشت گریل شده مخصوص</p>
+<span class="price">420,000 تومان</span>
+</td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
 </tr>
 
 </table>
-</div>
-
-<!-- نوشیدنی سرد -->
-<div class="section">
-<h2>نوشیدنی سرد</h2>
-<table>
-
-<tr class="item">
-<td class="img"><img src="images/iced-latte.jpg"></td>
-<td class="info">
-<h3>آیس لاته</h3>
-<p>قهوه سرد با یخ</p>
-<span class="price">130,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-<tr class="item">
-<td class="img"><img src="images/mojito.jpg"></td>
-<td class="info">
-<h3>موهیتو</h3>
-<p>نعناع و لیمو تازه</p>
-<span class="price">95,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-</table>
-</div>
-
-<!-- پیش غذا -->
-<div class="section">
-<h2>پیش غذا</h2>
-<table>
-
-<tr class="item">
-<td class="img"><img src="images/fries.jpg"></td>
-<td class="info">
-<h3>سیب‌زمینی سرخ‌کرده</h3>
-<p>به همراه سس مخصوص</p>
-<span class="price">150,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-<tr class="item">
-<td class="img"><img src="images/nuggets.jpg"></td>
-<td class="info">
-<h3>ناگت مرغ</h3>
-<p>۶ تکه</p>
-<span class="price">180,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-</table>
-</div>
-
-<!-- دسر -->
-<div class="section">
-<h2>دسر</h2>
-<table>
-
-<tr class="item">
-<td class="img"><img src="images/cheesecake.jpg"></td>
-<td class="info">
-<h3>چیزکیک</h3>
-<p>با سس توت فرنگی</p>
-<span class="price">140,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-<tr class="item">
-<td class="img"><img src="images/brownie.jpg"></td>
-<td class="info">
-<h3>براونی شکلاتی</h3>
-<p>گرم و تازه</p>
-<span class="price">130,000 تومان</span>
-</td>
-<td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
-</tr>
-
-</table>
-</div>
 
 </div>
 
