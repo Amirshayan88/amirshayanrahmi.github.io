@@ -2,109 +2,18 @@
 <html lang="fa">
 <head>
 <meta charset="UTF-8">
-<title> منوی رستوران </title>
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Sahel:wght@600;700&display=swap" rel="stylesheet">
-
-<style>
-body{
-    background:#1e1e1e;
-    font-family:'Vazirmatn', sans-serif;
-    direction:rtl;
-    color:white;
-    margin:0;
-    font-size:18px;
-}
-
-.container{width:95%;margin:auto;}
-
-.top-menu{
-    display:flex;
-    gap:15px;
-    margin:30px 0;
-}
-
-.menu-btn{
-    background:#ff7043;
-    padding:14px 25px;
-    border-radius:20px;
-    color:white;
-    text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    transition:0.3s;
-}
-.menu-btn:hover{
-    background:#ff5722;
-}
-
-table{
-    width:100%;
-    border-collapse: separate;
-    border-spacing:15px;
-}
-
-.item{
-    background:#424242;
-    border-radius:25px;
-    box-shadow:0 8px 15px rgba(0,0,0,0.4);
-    transition: transform 0.2s;
-}
-.item:hover{
-    transform: translateY(-5px);
-}
-
-.item td{
-    padding:15px;
-    vertical-align:middle;
-}
-
-.img{
-    width:100px;
-    height:100px;
-    background:#616161;
-    border-radius:20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:40px;
-}
-
-.food-name{
-    font-family:'Sahel', sans-serif;
-    font-size:22px;
-    font-weight:700;
-}
-
-.food-desc{
-    color:#ccc;
-    font-size:16px;
-    margin:5px 0;
-}
-
-.price{
-    color:#ffb300;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.buy-btn{
-    background:#00c853;
-    color:white;
-    padding:10px 20px;
-    border-radius:15px;
-    text-decoration:none;
-    font-weight:bold;
-    font-size:16px;
-    transition:0.2s;
-}
-.buy-btn:hover{
-    background:#00e676;
-}
-</style>
+<title>غذاهای اصلی</title>
+<link rel="stylesheet" href="all-view.css">
 </head>
 
 <body>
+
+    
 <div class="container">
+    <header class="group">
+        <h1>گروه سوم</h1>
+        <p>رحمی ، آزادی ، کاهه ، سروی</p>
+    </header>
 
 <div class="top-menu">
     <a class="menu-btn" href="index.html">منوی رستوران</a>
@@ -114,7 +23,7 @@ table{
 <table>
 
 <tr class="item">
-<td><div class="img">🍔</div></td>
+<td class="img"><img src="image/burger.jpg" alt="برگر"></td>
 <td>
 <h3 class="food-name">برگر مخصوص</h3>
 <p class="food-desc">گوشت گریل‌شده با پنیر</p>
@@ -124,7 +33,7 @@ table{
 </tr>
 
 <tr class="item">
-<td><div class="img">🍕</div></td>
+<td class="img"><img src="image/pizza.jpg" alt="پیتزا"></td>
 <td>
 <h3 class="food-name">پیتزا مخصوص</h3>
 <p class="food-desc">پنیر موزارلا و قارچ</p>
@@ -134,7 +43,7 @@ table{
 </tr>
 
 <tr class="item">
-<td><div class="img">🥩</div></td>
+<td class="img"><img src="image/steak.jpg" alt="استیک"></td>
 <td>
 <h3 class="food-name">استیک گوشت</h3>
 <p class="food-desc">با سس قارچ و سبزیجات</p>
@@ -144,7 +53,7 @@ table{
 </tr>
 
 <tr class="item">
-<td><div class="img">🍗</div></td>
+<td class="img"><img src="image/fillllee.jpg" alt="فیله سوخاری"></td>
 <td>
 <h3 class="food-name">فیله سوخاری</h3>
 <p class="food-desc">ترد و خوشمزه</p>
@@ -154,40 +63,40 @@ table{
 </tr>
 
 <tr class="item">
-<td><div class="img">🌭</div></td>
+<td class="img"><img src="image/hot-dog.jpg" alt="هات‌داگ"></td>
 <td>
 <h3 class="food-name">هات‌داگ ویژه</h3>
-<p>با پنیر و سس مخصوص</p>
+<p class="food-desc">با پنیر و سس مخصوص</p>
 <span class="price">180,000 تومان</span>
 </td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td><div class="img">🥪</div></td>
+<td class="img"><img src="image/sanclub.jpg" alt="ساندویچ کلاب"></td>
 <td>
 <h3 class="food-name">ساندویچ کلاب</h3>
-<p>با مرغ گریل و سبزیجات</p>
+<p class="food-desc">با مرغ گریل و سبزیجات</p>
 <span class="price">200,000 تومان</span>
 </td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td><div class="img">🍝</div></td>
+<td class="img"><img src="image/pasta.jpg" alt="پاستا"></td>
 <td>
 <h3 class="food-name">پاستا آلفردو</h3>
-<p>با سس خامه‌ای و قارچ</p>
+<p class="food-desc">با سس خامه‌ای و قارچ</p>
 <span class="price">220,000 تومان</span>
 </td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
 </tr>
 
 <tr class="item">
-<td><div class="img">🥘</div></td>
+<td class="img"><img src="image/khorake-sabzija.jpg" alt="خوراک سبزیجات"></td>
 <td>
 <h3 class="food-name">خوراک سبزیجات</h3>
-<p>سبزیجات تازه و سالم</p>
+<p class="food-desc">سبزیجات تازه و سالم</p>
 <span class="price">190,000 تومان</span>
 </td>
 <td><a class="buy-btn" href="https://snappfood.ir">خرید</a></td>
