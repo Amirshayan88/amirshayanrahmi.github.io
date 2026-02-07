@@ -1,176 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>A.SH Restaurant's Menu</title>
-    <style>
-        body {
-            font-family: Tahoma, sans-serif;
-            direction: ltr;
-            background: #cce7ff; /* light blue */
-            text-align: center;
-            padding: 30px;
-            font-size: 18px; /* اندازه پایه بزرگ‌تر */
-        }
+<meta charset="UTF-8">
+<title>غذاهای اصلی</title>
 
-        .header {
-            margin-bottom: 25px;
-            font-size: 28px; /* بزرگ‌تر از قبل */
-            font-weight: bold;
-            color: #333;
-        }
+<style>
+body{
+    background:#111;
+    font-family: Tahoma;
+    direction: rtl;
+    margin:0;
+    color:white;
+}
 
-        h1 {
-            color: #111;
-            margin-bottom: 35px;
-            font-size: 36px; /* بزرگ‌تر */
-        }
+.container{
+    width:95%;
+    margin:auto;
+}
 
-        .menu-container {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 25px;
-        }
+/* هدر */
+.header{
+    margin:20px 0;
+}
 
-        .item {
-            background: #fff;
-            padding: 30px;
-            border-radius: 18px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-            transition: transform 0.3s;
-        }
+.back{
+    color:orange;
+    text-decoration:none;
+}
 
-        .item:hover {
-            transform: translateY(-5px);
-        }
+/* جدول */
+table{
+    width:100%;
+    border-spacing:15px;
+}
 
-        .item h3 {
-            margin: 18px 0 10px;
-            color: #111;
-            font-size: 24px; /* بزرگ‌تر */
-        }
+.item{
+    background:#1c1c1c;
+    border-radius:10px;
+}
 
-        .price {
-            color: #008000;
-            font-size: 22px; /* بزرگ‌تر */
-            margin-bottom: 12px;
-            font-weight: bold;
-        }
+.item td{
+    padding:15px;
+}
 
-        .item p {
-            font-size: 18px; /* بزرگ‌تر */
-        }
+.img img{
+    width:100px;
+    border-radius:10px;
+}
 
-        a.back {
-            display: inline-block;
-            margin-top: 40px;
-            background: #444;
-            padding: 16px 35px;
-            font-size: 18px; /* بزرگ‌تر */
-            color: white;
-            border-radius: 10px;
-            text-decoration: none;
-        }
+.price{
+    color:#ffb300;
+}
 
-        a.back:hover {
-            background: #222;
-        }
-    </style>
+.buy-btn{
+    background:#00c853;
+    color:white;
+    padding:10px 20px;
+    border-radius:8px;
+    text-decoration:none;
+}
+</style>
 </head>
+
 <body>
 
-    <div class="header">Amirshayan Rahmi 11CA</div>
-    <h1>A.SH Restaurant's Menu</h1>
+<div class="container">
 
-    <div class="menu-container">
+<div class="header">
+    <a href="index.html" class="back">⬅ بازگشت به منو</a>
+    <h2>غذاهای اصلی</h2>
+</div>
 
-        <div class="item">
-            <h3>Special Kebab</h3>
-            <div class="price">230,000 Toman</div>
-            <p>Saffron marinated kebab with tomato and side dish</p>
-        </div>
+<table>
 
-        <div class="item">
-            <h3>Special Pizza</h3>
-            <div class="price">180,000 Toman</div>
-            <p>Pizza with meat, mushrooms, extra cheese</p>
-        </div>
+<tr class="item">
+<td class="img"><img src="images/burger.jpg"></td>
+<td>
+<h3>برگر مخصوص</h3>
+<p>گوشت گریل شده با پنیر</p>
+<span class="price">250,000 تومان</span>
+</td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
+</tr>
 
-        <div class="item">
-            <h3>Pepsi Cola</h3>
-            <div class="price">20,000 Toman</div>
-        </div>
+<tr class="item">
+<td class="img"><img src="images/pizza.jpg"></td>
+<td>
+<h3>پیتزا پپرونی</h3>
+<p>پنیر موزارلا و پپرونی</p>
+<span class="price">320,000 تومان</span>
+</td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
+</tr>
 
-        <div class="item">
-            <h3>Doogh</h3>
-            <div class="price">25,000 Toman</div>
-        </div>
+<tr class="item">
+<td class="img"><img src="images/pasta.jpg"></td>
+<td>
+<h3>پاستا آلفردو</h3>
+<p>سس خامه و مرغ</p>
+<span class="price">280,000 تومان</span>
+</td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
+</tr>
 
-        <div class="item">
-            <h3>Chelo Kebab Koobideh</h3>
-            <div class="price">200,000 Toman</div>
-            <p>Two skewers of koobideh kebab with saffron rice</p>
-        </div>
+<tr class="item">
+<td class="img"><img src="images/steak.jpg"></td>
+<td>
+<h3>استیک گوشت</h3>
+<p>گوشت گریل شده مخصوص</p>
+<span class="price">420,000 تومان</span>
+</td>
+<td>
+<a href="https://snappfood.ir" class="buy-btn">خرید</a>
+</td>
+</tr>
 
-        <div class="item">
-            <h3>Sabzi Polo with Fish</h3>
-            <div class="price">210,000 Toman</div>
-            <p>Herbed rice with fried fish</p>
-        </div>
+</table>
 
-        <div class="item">
-            <h3>Joojeh Kebab</h3>
-            <div class="price">175,000 Toman</div>
-            <p>Saffron marinated chicken with tomato and onion</p>
-        </div>
-
-        <div class="item">
-            <h3>Seasonal Salad</h3>
-            <div class="price">45,000 Toman</div>
-            <p>Fresh salad with seasonal vegetables</p>
-        </div>
-
-        <div class="item">
-            <h3>Alfredo Pasta</h3>
-            <div class="price">160,000 Toman</div>
-            <p>Pasta with Alfredo sauce and grilled chicken</p>
-        </div>
-
-        <div class="item">
-            <h3>Kebab Barg</h3>
-            <div class="price">250,000 Toman</div>
-            <p>Premium Barg kebab with rice and fresh vegetables</p>
-        </div>
-
-        <div class="item">
-            <h3>Fesenjan</h3>
-            <div class="price">230,000 Toman</div>
-            <p>Chicken or lamb with pomegranate walnut sauce</p>
-        </div>
-
-        <div class="item">
-            <h3>Ghormeh Sabzi</h3>
-            <div class="price">210,000 Toman</div>
-            <p>Traditional herb stew with lamb and kidney beans</p>
-        </div>
-
-        <div class="item">
-            <h3>Grilled Vegetables</h3>
-            <div class="price">95,000 Toman</div>
-            <p>Mixed fresh grilled vegetables with special sauce</p>
-        </div>
-
-        <div class="item">
-            <h3>Saffron Chicken Rice</h3>
-            <div class="price">185,000 Toman</div>
-            <p>Saffron rice with grilled chicken and special seasoning</p>
-        </div>
-
-    </div>
-
-    <a href="index.html" class="back">Back to Home</a>
+</div>
 
 </body>
 </html>
